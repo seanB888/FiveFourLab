@@ -11,6 +11,12 @@
 		0419B15D277D5B3200BD8D23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B15C277D5B3200BD8D23 /* ContentView.swift */; };
 		0419B15F277D5B3400BD8D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0419B15E277D5B3400BD8D23 /* Assets.xcassets */; };
 		0419B162277D5B3400BD8D23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0419B161277D5B3400BD8D23 /* Preview Assets.xcassets */; };
+		0419B169277D5FE300BD8D23 /* DateTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B168277D5FE300BD8D23 /* DateTitle.swift */; };
+		0419B16B277D628100BD8D23 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B16A277D628100BD8D23 /* HomeView.swift */; };
+		0419B16F277D63AA00BD8D23 /* FeaturedCourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B16E277D63AA00BD8D23 /* FeaturedCourseCard.swift */; };
+		0419B171277D68B200BD8D23 /* FeaturedCourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B170277D68B200BD8D23 /* FeaturedCourseList.swift */; };
+		0419B173277D6A4B00BD8D23 /* CourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B172277D6A4B00BD8D23 /* CourseCard.swift */; };
+		0419B175277D6AFA00BD8D23 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B174277D6AFA00BD8D23 /* CourseList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		0419B15C277D5B3200BD8D23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0419B15E277D5B3400BD8D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0419B161277D5B3400BD8D23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0419B168277D5FE300BD8D23 /* DateTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTitle.swift; sourceTree = "<group>"; };
+		0419B16A277D628100BD8D23 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0419B16E277D63AA00BD8D23 /* FeaturedCourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCourseCard.swift; sourceTree = "<group>"; };
+		0419B170277D68B200BD8D23 /* FeaturedCourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCourseList.swift; sourceTree = "<group>"; };
+		0419B172277D6A4B00BD8D23 /* CourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCard.swift; sourceTree = "<group>"; };
+		0419B174277D6AFA00BD8D23 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				0419B15A277D5B3200BD8D23 /* FiveFourLabApp.swift */,
-				0419B15C277D5B3200BD8D23 /* ContentView.swift */,
+				0419B16D277D629E00BD8D23 /* Components */,
+				0419B16C277D628B00BD8D23 /* View */,
 				0419B15E277D5B3400BD8D23 /* Assets.xcassets */,
 				0419B160277D5B3400BD8D23 /* Preview Content */,
 			);
@@ -65,6 +78,27 @@
 				0419B161277D5B3400BD8D23 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0419B16C277D628B00BD8D23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0419B15C277D5B3200BD8D23 /* ContentView.swift */,
+				0419B16A277D628100BD8D23 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0419B16D277D629E00BD8D23 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0419B168277D5FE300BD8D23 /* DateTitle.swift */,
+				0419B16E277D63AA00BD8D23 /* FeaturedCourseCard.swift */,
+				0419B170277D68B200BD8D23 /* FeaturedCourseList.swift */,
+				0419B172277D6A4B00BD8D23 /* CourseCard.swift */,
+				0419B174277D6AFA00BD8D23 /* CourseList.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0419B175277D6AFA00BD8D23 /* CourseList.swift in Sources */,
 				0419B15D277D5B3200BD8D23 /* ContentView.swift in Sources */,
+				0419B16B277D628100BD8D23 /* HomeView.swift in Sources */,
+				0419B171277D68B200BD8D23 /* FeaturedCourseList.swift in Sources */,
 				0419B15B277D5B3200BD8D23 /* FiveFourLabApp.swift in Sources */,
+				0419B173277D6A4B00BD8D23 /* CourseCard.swift in Sources */,
+				0419B169277D5FE300BD8D23 /* DateTitle.swift in Sources */,
+				0419B16F277D63AA00BD8D23 /* FeaturedCourseCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +317,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +347,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
