@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FiveFourLabApp: App {
+    @StateObject var courseViewModel = CourseViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(courseViewModel)
         }
     }
 }

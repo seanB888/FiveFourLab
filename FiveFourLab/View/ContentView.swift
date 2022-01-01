@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var courseViewModel: CourseViewModel
+    
     var body: some View {
-        HomeView()
-            .tabItem{
-                Image(systemName: "house")
-                Text("Learn Now")
+        TabView {
+            HomeView()
+                .tabItem{
+                    Image(systemName: "house")
+                    Text("Learn Now")
             }
+            SectionsView()
+                .tabItem{
+                    Image(systemName: "square.stack.3d.down.right.fill")
+                    Text("Sections")
+                }
+        }
+        .task {
+            await courseViewModel.fetch()
+        }
     }
 }
 

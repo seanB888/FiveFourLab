@@ -17,6 +17,22 @@
 		0419B171277D68B200BD8D23 /* FeaturedCourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B170277D68B200BD8D23 /* FeaturedCourseList.swift */; };
 		0419B173277D6A4B00BD8D23 /* CourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B172277D6A4B00BD8D23 /* CourseCard.swift */; };
 		0419B175277D6AFA00BD8D23 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B174277D6AFA00BD8D23 /* CourseList.swift */; };
+		0419B178277E0EB200BD8D23 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 0419B177277E0EB200BD8D23 /* Apollo */; };
+		0419B17A277E372400BD8D23 /* CourseQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0419B179277E372400BD8D23 /* CourseQuery.graphql */; };
+		0419B17D277E38D400BD8D23 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B17C277E38D400BD8D23 /* API.swift */; };
+		0419B180277E53C800BD8D23 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B17F277E53C800BD8D23 /* Network.swift */; };
+		0419B183277E54FE00BD8D23 /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B182277E54FE00BD8D23 /* CourseViewModel.swift */; };
+		04FBEEEE277EAEBB0023EB61 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FBEEED277EAEBB0023EB61 /* schema.json */; };
+		04FBEEF1277EBF340023EB61 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEEF0277EBF340023EB61 /* CourseModel.swift */; };
+		04FBEEF3277ECAF30023EB61 /* CourseData.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FBEEF2277ECAF30023EB61 /* CourseData.json */; };
+		04FBEEF5277ECAFE0023EB61 /* LoadFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEEF4277ECAFE0023EB61 /* LoadFromFile.swift */; };
+		04FBEEF7277ECB520023EB61 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEEF6277ECB520023EB61 /* PreviewData.swift */; };
+		04FBEEF9277ECE020023EB61 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEEF8277ECE020023EB61 /* Extensions.swift */; };
+		04FBEEFC277F7ABA0023EB61 /* SectionQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 04FBEEFB277F7ABA0023EB61 /* SectionQuery.graphql */; };
+		04FBEEFE277F87750023EB61 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEEFD277F87750023EB61 /* SectionModel.swift */; };
+		04FBEF00277FA2930023EB61 /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEEFF277FA2930023EB61 /* SectionViewModel.swift */; };
+		04FBEF02277FA71C0023EB61 /* SectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEF01277FA71B0023EB61 /* SectionsView.swift */; };
+		04FBEF04277FB0D10023EB61 /* SectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEF03277FB0D10023EB61 /* SectionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +47,21 @@
 		0419B170277D68B200BD8D23 /* FeaturedCourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCourseList.swift; sourceTree = "<group>"; };
 		0419B172277D6A4B00BD8D23 /* CourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCard.swift; sourceTree = "<group>"; };
 		0419B174277D6AFA00BD8D23 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		0419B179277E372400BD8D23 /* CourseQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CourseQuery.graphql; sourceTree = "<group>"; };
+		0419B17C277E38D400BD8D23 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = "../../../../../../Volumes/Storage/iOS School/SwiftUI Concurrency/Completed Project/SwiftUIConcurrencyFinal/API.swift"; sourceTree = "<group>"; };
+		0419B17F277E53C800BD8D23 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		0419B182277E54FE00BD8D23 /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
+		04FBEEED277EAEBB0023EB61 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = FiveFourLab/schema.json; sourceTree = SOURCE_ROOT; };
+		04FBEEF0277EBF340023EB61 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		04FBEEF2277ECAF30023EB61 /* CourseData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CourseData.json; sourceTree = "<group>"; };
+		04FBEEF4277ECAFE0023EB61 /* LoadFromFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadFromFile.swift; sourceTree = "<group>"; };
+		04FBEEF6277ECB520023EB61 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		04FBEEF8277ECE020023EB61 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		04FBEEFB277F7ABA0023EB61 /* SectionQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = SectionQuery.graphql; sourceTree = "<group>"; };
+		04FBEEFD277F87750023EB61 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		04FBEEFF277FA2930023EB61 /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
+		04FBEF01277FA71B0023EB61 /* SectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsView.swift; sourceTree = "<group>"; };
+		04FBEF03277FB0D10023EB61 /* SectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0419B178277E0EB200BD8D23 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,11 +95,18 @@
 		0419B159277D5B3200BD8D23 /* FiveFourLab */ = {
 			isa = PBXGroup;
 			children = (
-				0419B15A277D5B3200BD8D23 /* FiveFourLabApp.swift */,
-				0419B16D277D629E00BD8D23 /* Components */,
-				0419B16C277D628B00BD8D23 /* View */,
+				04FBEEFA277F79C20023EB61 /* Queries */,
+				0419B17C277E38D400BD8D23 /* API.swift */,
 				0419B15E277D5B3400BD8D23 /* Assets.xcassets */,
+				0419B15A277D5B3200BD8D23 /* FiveFourLabApp.swift */,
+				04FBEEED277EAEBB0023EB61 /* schema.json */,
+				0419B16D277D629E00BD8D23 /* Components */,
+				04FBEEEF277EBF0E0023EB61 /* Models */,
+				0419B17E277E53A200BD8D23 /* Utility */,
+				0419B16C277D628B00BD8D23 /* View */,
+				0419B181277E54C700BD8D23 /* View Models */,
 				0419B160277D5B3400BD8D23 /* Preview Content */,
+				0419B179277E372400BD8D23 /* CourseQuery.graphql */,
 			);
 			path = FiveFourLab;
 			sourceTree = "<group>";
@@ -75,7 +114,9 @@
 		0419B160277D5B3400BD8D23 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				04FBEEF2277ECAF30023EB61 /* CourseData.json */,
 				0419B161277D5B3400BD8D23 /* Preview Assets.xcassets */,
+				04FBEEF6277ECB520023EB61 /* PreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -85,6 +126,7 @@
 			children = (
 				0419B15C277D5B3200BD8D23 /* ContentView.swift */,
 				0419B16A277D628100BD8D23 /* HomeView.swift */,
+				04FBEF01277FA71B0023EB61 /* SectionsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,8 +139,45 @@
 				0419B170277D68B200BD8D23 /* FeaturedCourseList.swift */,
 				0419B172277D6A4B00BD8D23 /* CourseCard.swift */,
 				0419B174277D6AFA00BD8D23 /* CourseList.swift */,
+				04FBEF03277FB0D10023EB61 /* SectionList.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		0419B17E277E53A200BD8D23 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				04FBEEF4277ECAFE0023EB61 /* LoadFromFile.swift */,
+				0419B17F277E53C800BD8D23 /* Network.swift */,
+				04FBEEF8277ECE020023EB61 /* Extensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0419B181277E54C700BD8D23 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				0419B182277E54FE00BD8D23 /* CourseViewModel.swift */,
+				04FBEEFF277FA2930023EB61 /* SectionViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		04FBEEEF277EBF0E0023EB61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04FBEEF0277EBF340023EB61 /* CourseModel.swift */,
+				04FBEEFD277F87750023EB61 /* SectionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04FBEEFA277F79C20023EB61 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				04FBEEFB277F7ABA0023EB61 /* SectionQuery.graphql */,
+			);
+			path = Queries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +187,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0419B165277D5B3400BD8D23 /* Build configuration list for PBXNativeTarget "FiveFourLab" */;
 			buildPhases = (
+				0419B17B277E378400BD8D23 /* Generate Apollo GraphQL API */,
 				0419B153277D5B3200BD8D23 /* Sources */,
 				0419B154277D5B3200BD8D23 /* Frameworks */,
 				0419B155277D5B3200BD8D23 /* Resources */,
@@ -117,6 +197,9 @@
 			dependencies = (
 			);
 			name = FiveFourLab;
+			packageProductDependencies = (
+				0419B177277E0EB200BD8D23 /* Apollo */,
+			);
 			productName = FiveFourLab;
 			productReference = 0419B157277D5B3200BD8D23 /* FiveFourLab.app */;
 			productType = "com.apple.product-type.application";
@@ -145,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 0419B14E277D5B3200BD8D23;
+			packageReferences = (
+				0419B176277E0EB200BD8D23 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 0419B158277D5B3200BD8D23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,25 +245,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FBEEEE277EAEBB0023EB61 /* schema.json in Resources */,
 				0419B162277D5B3400BD8D23 /* Preview Assets.xcassets in Resources */,
 				0419B15F277D5B3400BD8D23 /* Assets.xcassets in Resources */,
+				04FBEEF3277ECAF30023EB61 /* CourseData.json in Resources */,
+				04FBEEFC277F7ABA0023EB61 /* SectionQuery.graphql in Resources */,
+				0419B17A277E372400BD8D23 /* CourseQuery.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0419B17B277E378400BD8D23 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0419B153277D5B3200BD8D23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0419B183277E54FE00BD8D23 /* CourseViewModel.swift in Sources */,
+				0419B180277E53C800BD8D23 /* Network.swift in Sources */,
 				0419B175277D6AFA00BD8D23 /* CourseList.swift in Sources */,
+				04FBEEFE277F87750023EB61 /* SectionModel.swift in Sources */,
 				0419B15D277D5B3200BD8D23 /* ContentView.swift in Sources */,
+				04FBEEF7277ECB520023EB61 /* PreviewData.swift in Sources */,
+				04FBEF02277FA71C0023EB61 /* SectionsView.swift in Sources */,
+				04FBEF04277FB0D10023EB61 /* SectionList.swift in Sources */,
 				0419B16B277D628100BD8D23 /* HomeView.swift in Sources */,
 				0419B171277D68B200BD8D23 /* FeaturedCourseList.swift in Sources */,
+				04FBEF00277FA2930023EB61 /* SectionViewModel.swift in Sources */,
+				04FBEEF1277EBF340023EB61 /* CourseModel.swift in Sources */,
 				0419B15B277D5B3200BD8D23 /* FiveFourLabApp.swift in Sources */,
 				0419B173277D6A4B00BD8D23 /* CourseCard.swift in Sources */,
+				04FBEEF9277ECE020023EB61 /* Extensions.swift in Sources */,
 				0419B169277D5FE300BD8D23 /* DateTitle.swift in Sources */,
+				04FBEEF5277ECAFE0023EB61 /* LoadFromFile.swift in Sources */,
+				0419B17D277E38D400BD8D23 /* API.swift in Sources */,
 				0419B16F277D63AA00BD8D23 /* FeaturedCourseCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +505,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0419B176277E0EB200BD8D23 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0419B177277E0EB200BD8D23 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0419B176277E0EB200BD8D23 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0419B14F277D5B3200BD8D23 /* Project object */;
 }

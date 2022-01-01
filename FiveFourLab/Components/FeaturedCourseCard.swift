@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct FeaturedCourseCard: View {
+    var featuredCourses: Course
+    
     var body: some View {
         VStack(spacing: 8) {
-            AsyncImage(url: URL(string: "https://images.ctfassets.net/ooa29xqb8tix/5IXFM29JvbdXKuHeGF91Y3/6b49d65577c32747b7b1a60444c56d9c/SwiftUI_Combine_800x600_cover.png")) {
+            AsyncImage(url: URL(string: featuredCourses.illustration)) {
                 image in
                 image
                     .resizable()
@@ -22,20 +24,20 @@ struct FeaturedCourseCard: View {
             }
             
             
-            Text("SwiftUI Combine and Data")
+            Text(featuredCourses.title)
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .lineLimit(2)
             
-            Text("18 sections - 3 hours")
+            Text("\(featuredCourses.numberOfSections) sections - \(featuredCourses.numberOfHours) hours")
                 .font(.footnote)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7)))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .lineLimit(1)
             
-            Text("Learn about Combine, the MVVM architecture, data, notifications and performance hands-on by creating a beautiful SwiftUI application")
+            Text(featuredCourses.subtitle)
                 .font(.footnote)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7)))
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -45,7 +47,7 @@ struct FeaturedCourseCard: View {
         .padding(16)
         .frame(width: 252, height: 350, alignment: .top)
         .background(
-            LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .top, endPoint: .bottomLeading)
+            LinearGradient(gradient: Gradient(colors: [Color.init(hex: featuredCourses.colors.first!!), Color.init(hex: featuredCourses.colors.last!!)]), startPoint: .top, endPoint: .bottomLeading)
         )
         .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: 30, style: .continuous)
@@ -57,6 +59,6 @@ struct FeaturedCourseCard: View {
 
 struct FeaturedCourseCard_Previews: PreviewProvider {
     static var previews: some View {
-        FeaturedCourseCard()
+        FeaturedCourseCard(featuredCourses: coursePreviewData)
     }
 }

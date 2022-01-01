@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct CourseCard: View {
+    var course: Course
+    
     var body: some View {
         VStack(spacing: 8) {
-            AsyncImage(url: URL(string: "https://images.ctfassets.net/ooa29xqb8tix/5IXFM29JvbdXKuHeGF91Y3/6b49d65577c32747b7b1a60444c56d9c/SwiftUI_Combine_800x600_cover.png")) { image in
+            AsyncImage(url: URL(string: course.illustration)) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -22,14 +24,14 @@ struct CourseCard: View {
             }
             
             Spacer()
-            
-            Text("SwiftUI for iOS 15")
+            // Title
+            Text(course.title)
                 .font(.headline)
                 .foregroundColor(.white)
                 .lineLimit(2)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            
-            Text("20 sections - 4 hours")
+            // subtitle
+            Text("\(course.numberOfSections) sections - \(course.numberOfHours) hours")
                 .font(.caption)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7)))
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -38,7 +40,7 @@ struct CourseCard: View {
         .padding(16)
         .frame(height: 217, alignment: .top)
         .background(
-            LinearGradient(gradient: Gradient(colors: [.purple, .blue]), startPoint: .top, endPoint: .bottomLeading)
+            LinearGradient(gradient: Gradient(colors: [Color.init(hex: course.colors.first!!), Color.init(hex: course.colors.last!!)]), startPoint: .top, endPoint: .bottomLeading)
         )
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -51,6 +53,6 @@ struct CourseCard: View {
 
 struct CourseCard_Previews: PreviewProvider {
     static var previews: some View {
-        CourseCard()
+        CourseCard(course: coursePreviewData)
     }
 }
