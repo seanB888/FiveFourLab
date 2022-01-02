@@ -33,6 +33,8 @@
 		04D7DA472782088100BFD059 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7DA462782088100BFD059 /* AccountView.swift */; };
 		04D7DA4927820A6200BFD059 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7DA4827820A6200BFD059 /* UserModel.swift */; };
 		04D7DA4B27820D1200BFD059 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7DA4A27820D1200BFD059 /* AccountViewModel.swift */; };
+		04D7DA4D278220D800BFD059 /* ProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7DA4C278220D800BFD059 /* ProfileCard.swift */; };
+		04D7DA4F278222E900BFD059 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7DA4E278222E900BFD059 /* SFSafariViewWrapper.swift */; };
 		04FBEEEE277EAEBB0023EB61 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FBEEED277EAEBB0023EB61 /* schema.json */; };
 		04FBEEF1277EBF340023EB61 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEEF0277EBF340023EB61 /* CourseModel.swift */; };
 		04FBEEF3277ECAF30023EB61 /* CourseData.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FBEEF2277ECAF30023EB61 /* CourseData.json */; };
@@ -73,6 +75,8 @@
 		04D7DA462782088100BFD059 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		04D7DA4827820A6200BFD059 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		04D7DA4A27820D1200BFD059 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		04D7DA4C278220D800BFD059 /* ProfileCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
+		04D7DA4E278222E900BFD059 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
 		04FBEEED277EAEBB0023EB61 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = FiveFourLab/schema.json; sourceTree = SOURCE_ROOT; };
 		04FBEEF0277EBF340023EB61 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		04FBEEF2277ECAF30023EB61 /* CourseData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CourseData.json; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 		0419B16D277D629E00BD8D23 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				04D7DA4C278220D800BFD059 /* ProfileCard.swift */,
 				04ADD32D27817C2B00B64594 /* GradientButton.swift */,
 				04ADD32927817C2A00B64594 /* GradientIcon.swift */,
 				04ADD32A27817C2A00B64594 /* ResetPasswordView.swift */,
@@ -181,6 +186,7 @@
 				0419B17F277E53C800BD8D23 /* Network.swift */,
 				04FBEEF8277ECE020023EB61 /* Extensions.swift */,
 				04ADD33327817CBA00B64594 /* ModalManager.swift */,
+				04D7DA4E278222E900BFD059 /* SFSafariViewWrapper.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -345,6 +351,8 @@
 				04ADD33427817CBA00B64594 /* ModalManager.swift in Sources */,
 				04ADD32827817A0600B64594 /* ProfileIcon.swift in Sources */,
 				0419B16F277D63AA00BD8D23 /* FeaturedCourseCard.swift in Sources */,
+				04D7DA4D278220D800BFD059 /* ProfileCard.swift in Sources */,
+				04D7DA4F278222E900BFD059 /* SFSafariViewWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
