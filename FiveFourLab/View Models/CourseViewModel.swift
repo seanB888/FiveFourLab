@@ -9,8 +9,8 @@ import Foundation
 import Apollo
 
 enum FeaturedSubject: String, CaseIterable {
-    case Jamaican = "Patios"
-    case Vietnam = "Tieng Viet"
+    case Jamaican = "Jamaican"
+    case Vietnamese = "Vietnamese"
 }
 
 class CourseViewModel: ObservableObject {
@@ -41,7 +41,7 @@ class CourseViewModel: ObservableObject {
             let result = try await queryCourses()  // Catch the course using Apollo
             if let result = result {
                 if let courseCollection = result.data?.courseCollection { // Unwrapping the optional result we get from Apollo
-                    courses = process(data: courseCollection) // Processing the data into the model, and assigning it to the courses variable
+                    self.courses = process(data: courseCollection) // Processing the data into the model, and assigning it to the courses variable
                     findFeaturedCourses() // Finding the featured courses, depending on the featuredSubject value
                 }
             }
