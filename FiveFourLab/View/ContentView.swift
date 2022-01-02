@@ -39,6 +39,11 @@ struct ContentView: View {
                     Image(systemName: "square.stack.3d.down.right.fill")
                     Text("Sections")
                 }
+                AccountView()
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("Account")
+                    }
             }
             .task {
                 await courseViewModel.fetch()

@@ -30,6 +30,9 @@
 		04ADD33227817C2B00B64594 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADD32D27817C2B00B64594 /* GradientButton.swift */; };
 		04ADD33427817CBA00B64594 /* ModalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADD33327817CBA00B64594 /* ModalManager.swift */; };
 		04ADD33827817ED300B64594 /* ModalManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADD33727817ED300B64594 /* ModalManagerView.swift */; };
+		04D7DA472782088100BFD059 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7DA462782088100BFD059 /* AccountView.swift */; };
+		04D7DA4927820A6200BFD059 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7DA4827820A6200BFD059 /* UserModel.swift */; };
+		04D7DA4B27820D1200BFD059 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7DA4A27820D1200BFD059 /* AccountViewModel.swift */; };
 		04FBEEEE277EAEBB0023EB61 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FBEEED277EAEBB0023EB61 /* schema.json */; };
 		04FBEEF1277EBF340023EB61 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEEF0277EBF340023EB61 /* CourseModel.swift */; };
 		04FBEEF3277ECAF30023EB61 /* CourseData.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FBEEF2277ECAF30023EB61 /* CourseData.json */; };
@@ -67,6 +70,9 @@
 		04ADD32D27817C2B00B64594 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		04ADD33327817CBA00B64594 /* ModalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalManager.swift; sourceTree = "<group>"; };
 		04ADD33727817ED300B64594 /* ModalManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalManagerView.swift; sourceTree = "<group>"; };
+		04D7DA462782088100BFD059 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		04D7DA4827820A6200BFD059 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		04D7DA4A27820D1200BFD059 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		04FBEEED277EAEBB0023EB61 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = FiveFourLab/schema.json; sourceTree = SOURCE_ROOT; };
 		04FBEEF0277EBF340023EB61 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		04FBEEF2277ECAF30023EB61 /* CourseData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CourseData.json; sourceTree = "<group>"; };
@@ -144,6 +150,7 @@
 				0419B16A277D628100BD8D23 /* HomeView.swift */,
 				04FBEF01277FA71B0023EB61 /* SectionsView.swift */,
 				04ADD33727817ED300B64594 /* ModalManagerView.swift */,
+				04D7DA462782088100BFD059 /* AccountView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 			children = (
 				0419B182277E54FE00BD8D23 /* CourseViewModel.swift */,
 				04FBEEFF277FA2930023EB61 /* SectionViewModel.swift */,
+				04D7DA4A27820D1200BFD059 /* AccountViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 			children = (
 				04FBEEF0277EBF340023EB61 /* CourseModel.swift */,
 				04FBEEFD277F87750023EB61 /* SectionModel.swift */,
+				04D7DA4827820A6200BFD059 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -309,7 +318,9 @@
 				0419B183277E54FE00BD8D23 /* CourseViewModel.swift in Sources */,
 				0419B180277E53C800BD8D23 /* Network.swift in Sources */,
 				0419B175277D6AFA00BD8D23 /* CourseList.swift in Sources */,
+				04D7DA4927820A6200BFD059 /* UserModel.swift in Sources */,
 				04ADD32E27817C2B00B64594 /* GradientIcon.swift in Sources */,
+				04D7DA472782088100BFD059 /* AccountView.swift in Sources */,
 				04ADD33127817C2B00B64594 /* SignUpView.swift in Sources */,
 				04FBEEFE277F87750023EB61 /* SectionModel.swift in Sources */,
 				0419B15D277D5B3200BD8D23 /* ContentView.swift in Sources */,
@@ -320,6 +331,7 @@
 				0419B16B277D628100BD8D23 /* HomeView.swift in Sources */,
 				0419B171277D68B200BD8D23 /* FeaturedCourseList.swift in Sources */,
 				04FBEF00277FA2930023EB61 /* SectionViewModel.swift in Sources */,
+				04D7DA4B27820D1200BFD059 /* AccountViewModel.swift in Sources */,
 				04FBEEF1277EBF340023EB61 /* CourseModel.swift in Sources */,
 				04ADD33227817C2B00B64594 /* GradientButton.swift in Sources */,
 				0419B15B277D5B3200BD8D23 /* FiveFourLabApp.swift in Sources */,
