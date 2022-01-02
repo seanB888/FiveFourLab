@@ -10,6 +10,8 @@ import SwiftUI
 struct ProfileCard: View {
     var user: User
     @State private var showSafari: Bool = false
+    let description = Description(content: "I am the Boss")
+    @State private var userDescription: String = ""
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16.0) {
@@ -27,7 +29,7 @@ struct ProfileCard: View {
                 Spacer()
             }
             
-            Text(user.company.catchPhrase)
+            Text(userDescription)
                 .font(.title2)
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -60,6 +62,10 @@ struct ProfileCard: View {
         .offset(y: 55)
         .fullScreenCover(isPresented: $showSafari) {
             SFSafariViewWrapper(url: URL(string: "https://\(user.website)")!)
+        }
+        .task {
+            await description.update(with: "I love designing code")
+            userDescription = await description.content
         }
     }
     
