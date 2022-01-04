@@ -29,7 +29,7 @@ struct HomeView: View {
                     }
                     .padding(.horizontal, 20)
                     
-                    FeaturedCourseList(featuredCourse: courseViewModel.featuredCourses)
+                    FeaturedCourseList(featuredCourse: courseViewModel.featuredCourse)
                         .padding(.top, 20)
                     
                     Text("All Courses")
@@ -47,6 +47,7 @@ struct HomeView: View {
                 .ignoresSafeArea()
                 .frame(height: 0)
         }
+        .navigationBarHidden(true)
     }
 }
 
@@ -54,6 +55,6 @@ struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
             .environmentObject(CourseViewModel())
-            .environmentObject(ModalManager())
+        .environmentObject(ModalManager())
     }
 }

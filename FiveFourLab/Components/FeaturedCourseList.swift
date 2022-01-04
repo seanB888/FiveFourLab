@@ -15,8 +15,9 @@ struct FeaturedCourseList: View {
             HStack(spacing: 20) {
                 if featuredCourse.count > 0 {
                     ForEach(featuredCourse, id: \.id) { course in
-                        FeaturedCourseCard(featuredCourse: course)
-                            .frame(width: 250, height:350)
+                        NavigationLink(destination: CourseView(course: course)) {
+                            FeaturedCourseCard(featuredCourse: course)
+                            .frame(width: 250, height:350)                        }
                     }
                 } else {
                     ForEach(0..<4, id: \.self) { number in

@@ -16,7 +16,7 @@ enum FeaturedSubject: String, CaseIterable {
 class CourseViewModel: ObservableObject {
     @Published public private(set) var courses: [Course] = []
     var featuredSubject: FeaturedSubject = FeaturedSubject.allCases.randomElement() ?? .Jamaican
-    @Published public private(set) var featuredCourses: [Course] = []
+    @Published public private(set) var featuredCourse: [Course] = []
     
     private func queryCourses() async throws -> GraphQLResult<CourseQuery.Data>? {
         return await withCheckedContinuation{ continuation in
@@ -41,7 +41,7 @@ class CourseViewModel: ObservableObject {
             let result = try await queryCourses()  // Catch the course using Apollo
             if let result = result {
                 if let courseCollection = result.data?.courseCollection { // Unwrapping the optional result we get from Apollo
-                    self.courses = process(data: courseCollection) // Processing the data into the model, and assigning it to the courses variable
+                    courses = process(data: courseCollection) // Processing the data into the model, and assigning it to the courses variable
                     findFeaturedCourses() // Finding the featured courses, depending on the featuredSubject value
                 }
             }
@@ -59,7 +59,7 @@ class CourseViewModel: ObservableObject {
     private func findFeaturedCourses() {
         guard courses.count > 0 else { return }
         
-        featuredCourses = courses.filter { course in
+        featuredCourse = courses.filter { course in
             course.subject == featuredSubject.rawValue
         }
     }

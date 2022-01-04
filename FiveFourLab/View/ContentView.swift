@@ -16,29 +16,32 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             TabView {
-                HomeView()
-                    .environmentObject(modalManager)
-                    .tabItem{
-                        Image(systemName: "house")
-                        Text("Learn Now")
-                    }
+                NavigationView {
+                    HomeView()
+                        .environmentObject(modalManager)
+                }
+                .tabItem{
+                    Image(systemName: "house")
+                    Text("Learn Now")
+                }
                 
                 NavigationView {
                     SectionsView()
                 }
                 .searchable(text: $text) {
-                    ForEach(sectionViewModel.sections.prefix(3)){ section in
+                    ForEach(sectionViewModel.sections.prefix(3)) { section in
                         Text(section.title)
                             .searchCompletion(section.title)
                     }
-                    .onSubmit(of: .search) {
-                        sectionViewModel.filterSections(for: text)
-                    }
+                }
+                .onSubmit(of: .search) {
+                    sectionViewModel.filterSections(for: text)
                 }
                 .tabItem{
                     Image(systemName: "square.stack.3d.down.right.fill")
                     Text("Sections")
                 }
+                
                 AccountView()
                     .tabItem {
                         Image(systemName: "person")
