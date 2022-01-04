@@ -43,6 +43,7 @@ struct CourseView: View {
                 }
             }
             .padding(20)
+            .padding(.bottom, 100)
         }
             .ignoresSafeArea()
     }

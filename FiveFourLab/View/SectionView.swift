@@ -11,6 +11,7 @@ struct SectionView: View {
     @Environment(\.presentationMode) var presentationMode
     var course: Course
     var section: SectionCollection.Section
+    @State private var attributedString: AttributedString = ""
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -36,8 +37,16 @@ struct SectionView: View {
         ScrollView {
             SectionViewCover(course: course, section: section)
             
-            Text(section.content)
+            Text(attributedString)
                 .padding(16)
+                .padding(.bottom, 100)
+                .onAppear {
+                    do {
+                        attributedString = try AttributedString(markdown: section.content)
+                    } catch {
+                        print("Couldn't parse: \(error)")
+                    }
+                }
         }
         .ignoresSafeArea()
     }

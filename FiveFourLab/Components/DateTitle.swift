@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DateTitle: View {
-    var title: String
+    var title: AttributedString
     @State private var date: String = ""
     
     var body: some View {
@@ -27,7 +27,16 @@ struct DateTitle: View {
 }
 
 struct DateTitle_Previews: PreviewProvider {
+    static var attributedString: AttributedString {
+        var subject = AttributedString("Mathematics")
+        
+        var container = AttributeContainer()
+        container.foregroundColor = .purple
+        subject.mergeAttributes(container)
+        return "Learn " + subject
+    }
+    
     static var previews: some View {
-        DateTitle(title: "Learning SwiftUI")
+        DateTitle(title: attributedString)
     }
 }
