@@ -22,6 +22,7 @@
 		0419B17D277E38D400BD8D23 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B17C277E38D400BD8D23 /* API.swift */; };
 		0419B180277E53C800BD8D23 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B17F277E53C800BD8D23 /* Network.swift */; };
 		0419B183277E54FE00BD8D23 /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419B182277E54FE00BD8D23 /* CourseViewModel.swift */; };
+		04779D8A27862905007C63A8 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04779D8927862905007C63A8 /* FirestoreManager.swift */; };
 		04ADD32827817A0600B64594 /* ProfileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADD32727817A0600B64594 /* ProfileIcon.swift */; };
 		04ADD32E27817C2B00B64594 /* GradientIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADD32927817C2A00B64594 /* GradientIcon.swift */; };
 		04ADD32F27817C2B00B64594 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADD32A27817C2A00B64594 /* ResetPasswordView.swift */; };
@@ -44,6 +45,7 @@
 		04D7DA6C27822C3E00BFD059 /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7DA6527822C3E00BFD059 /* SectionRow.swift */; };
 		04D7DA6D27822C3E00BFD059 /* CourseViewSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7DA6627822C3E00BFD059 /* CourseViewSubtitle.swift */; };
 		04D7DA6F27822FEE00BFD059 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7DA6E27822FEE00BFD059 /* SectionView.swift */; };
+		04F7E3AE27853302002BE96A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F7E3AD27853301002BE96A /* GoogleService-Info.plist */; };
 		04FBEEEE277EAEBB0023EB61 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FBEEED277EAEBB0023EB61 /* schema.json */; };
 		04FBEEF1277EBF340023EB61 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEEF0277EBF340023EB61 /* CourseModel.swift */; };
 		04FBEEF3277ECAF30023EB61 /* CourseData.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FBEEF2277ECAF30023EB61 /* CourseData.json */; };
@@ -55,6 +57,7 @@
 		04FBEF00277FA2930023EB61 /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEEFF277FA2930023EB61 /* SectionViewModel.swift */; };
 		04FBEF02277FA71C0023EB61 /* SectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEF01277FA71B0023EB61 /* SectionsView.swift */; };
 		04FBEF04277FB0D10023EB61 /* SectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBEF03277FB0D10023EB61 /* SectionList.swift */; };
+		3435A26D4FF27363CAE01F05 /* Pods_FiveFourLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741F1181CC57B077CF986381 /* Pods_FiveFourLab.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,7 @@
 		0419B17C277E38D400BD8D23 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = "../../../../../../Volumes/Storage/iOS School/SwiftUI Concurrency/Completed Project/SwiftUIConcurrencyFinal/API.swift"; sourceTree = "<group>"; };
 		0419B17F277E53C800BD8D23 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		0419B182277E54FE00BD8D23 /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
+		04779D8927862905007C63A8 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		04ADD32727817A0600B64594 /* ProfileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIcon.swift; sourceTree = "<group>"; };
 		04ADD32927817C2A00B64594 /* GradientIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientIcon.swift; sourceTree = "<group>"; };
 		04ADD32A27817C2A00B64594 /* ResetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 		04D7DA6527822C3E00BFD059 /* SectionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
 		04D7DA6627822C3E00BFD059 /* CourseViewSubtitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewSubtitle.swift; sourceTree = "<group>"; };
 		04D7DA6E27822FEE00BFD059 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		04F7E3AD27853301002BE96A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04FBEEED277EAEBB0023EB61 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = FiveFourLab/schema.json; sourceTree = SOURCE_ROOT; };
 		04FBEEF0277EBF340023EB61 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		04FBEEF2277ECAF30023EB61 /* CourseData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CourseData.json; sourceTree = "<group>"; };
@@ -106,6 +111,9 @@
 		04FBEEFF277FA2930023EB61 /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
 		04FBEF01277FA71B0023EB61 /* SectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsView.swift; sourceTree = "<group>"; };
 		04FBEF03277FB0D10023EB61 /* SectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionList.swift; sourceTree = "<group>"; };
+		1450429A741243E4BDF1640F /* Pods-FiveFourLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveFourLab.release.xcconfig"; path = "Target Support Files/Pods-FiveFourLab/Pods-FiveFourLab.release.xcconfig"; sourceTree = "<group>"; };
+		741F1181CC57B077CF986381 /* Pods_FiveFourLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveFourLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE99F33EBB95C28731E9EB27 /* Pods-FiveFourLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveFourLab.debug.xcconfig"; path = "Target Support Files/Pods-FiveFourLab/Pods-FiveFourLab.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0419B178277E0EB200BD8D23 /* Apollo in Frameworks */,
+				3435A26D4FF27363CAE01F05 /* Pods_FiveFourLab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +134,8 @@
 			children = (
 				0419B159277D5B3200BD8D23 /* FiveFourLab */,
 				0419B158277D5B3200BD8D23 /* Products */,
+				B72A194A81C81C6B441D0BC0 /* Pods */,
+				413E65C7F2DD95C88D6EA4A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,11 +150,13 @@
 		0419B159277D5B3200BD8D23 /* FiveFourLab */ = {
 			isa = PBXGroup;
 			children = (
-				04FBEEFA277F79C20023EB61 /* Queries */,
-				0419B17C277E38D400BD8D23 /* API.swift */,
 				0419B15E277D5B3400BD8D23 /* Assets.xcassets */,
+				0419B17C277E38D400BD8D23 /* API.swift */,
 				0419B15A277D5B3200BD8D23 /* FiveFourLabApp.swift */,
+				04F7E3AD27853301002BE96A /* GoogleService-Info.plist */,
 				04FBEEED277EAEBB0023EB61 /* schema.json */,
+				04779D88278628E5007C63A8 /* Managers */,
+				04FBEEFA277F79C20023EB61 /* Queries */,
 				0419B16D277D629E00BD8D23 /* Components */,
 				04FBEEEF277EBF0E0023EB61 /* Models */,
 				0419B17E277E53A200BD8D23 /* Utility */,
@@ -227,6 +240,14 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
+		04779D88278628E5007C63A8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				04779D8927862905007C63A8 /* FirestoreManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		04FBEEEF277EBF0E0023EB61 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +267,23 @@
 			path = Queries;
 			sourceTree = "<group>";
 		};
+		413E65C7F2DD95C88D6EA4A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				741F1181CC57B077CF986381 /* Pods_FiveFourLab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B72A194A81C81C6B441D0BC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE99F33EBB95C28731E9EB27 /* Pods-FiveFourLab.debug.xcconfig */,
+				1450429A741243E4BDF1640F /* Pods-FiveFourLab.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,10 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0419B165277D5B3400BD8D23 /* Build configuration list for PBXNativeTarget "FiveFourLab" */;
 			buildPhases = (
+				E7D6932ED2AAF4C8053A1A50 /* [CP] Check Pods Manifest.lock */,
 				0419B17B277E378400BD8D23 /* Generate Apollo GraphQL API */,
 				0419B153277D5B3200BD8D23 /* Sources */,
 				0419B154277D5B3200BD8D23 /* Frameworks */,
 				0419B155277D5B3200BD8D23 /* Resources */,
+				5688F5A2C3538DC5A0E7A9B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +357,7 @@
 				04FBEEF3277ECAF30023EB61 /* CourseData.json in Resources */,
 				04FBEEFC277F7ABA0023EB61 /* SectionQuery.graphql in Resources */,
 				0419B17A277E372400BD8D23 /* CourseQuery.graphql in Resources */,
+				04F7E3AE27853302002BE96A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +366,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		0419B17B277E378400BD8D23 /* Generate Apollo GraphQL API */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -337,9 +378,48 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+		5688F5A2C3538DC5A0E7A9B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FiveFourLab/Pods-FiveFourLab-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FiveFourLab/Pods-FiveFourLab-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FiveFourLab/Pods-FiveFourLab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D6932ED2AAF4C8053A1A50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FiveFourLab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -349,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0419B183277E54FE00BD8D23 /* CourseViewModel.swift in Sources */,
+				04779D8A27862905007C63A8 /* FirestoreManager.swift in Sources */,
 				0419B180277E53C800BD8D23 /* Network.swift in Sources */,
 				04D7DA6A27822C3E00BFD059 /* SectionViewTitle.swift in Sources */,
 				0419B175277D6AFA00BD8D23 /* CourseList.swift in Sources */,
@@ -513,6 +594,7 @@
 		};
 		0419B166277D5B3400BD8D23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE99F33EBB95C28731E9EB27 /* Pods-FiveFourLab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -543,6 +625,7 @@
 		};
 		0419B167277D5B3400BD8D23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1450429A741243E4BDF1640F /* Pods-FiveFourLab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

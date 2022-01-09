@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct SignInView: View {
     @EnvironmentObject var modalManager: ModalManager
@@ -28,6 +29,8 @@ struct SignInView: View {
                 HStack {
                     GradientIcon()
                     TextField("Email address", text: $email)
+                        .autocapitalization(.none)
+                        .keyboardType(UIKeyboardType.emailAddress)
                         .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
                 }
                 .padding(8)
@@ -38,6 +41,7 @@ struct SignInView: View {
                 HStack {
                     GradientIcon(icon: "key.fill")
                     SecureField("Password", text: $password)
+                        .keyboardType(UIKeyboardType.namePhonePad)
                         .textContentType(.password)
                         .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
                 }
@@ -47,6 +51,9 @@ struct SignInView: View {
                 .cornerRadius(20)
                 
                 GradientButton(text: "Sign in")
+                    .onTapGesture {
+                        login()
+                    }
                 
                 Rectangle()
                     .frame(maxWidth: 335, maxHeight: 1)
@@ -82,6 +89,16 @@ struct SignInView: View {
         .frame(width: UIScreen.main.bounds.size.width)
         .background(.white)
         .cornerRadius(30)
+    }
+    
+    func login() {
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+            } else {
+                print("SUCCESS: You have loged in.")
+            }
+        }
     }
 }
 

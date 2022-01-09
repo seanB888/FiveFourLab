@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var courseViewModel: CourseViewModel
     @EnvironmentObject var sectionViewModel: SectionViewModel
+    @EnvironmentObject var firestoreManager: FirestoreManager
     @StateObject var modalManager = ModalManager()
     @State private var text = ""
     
@@ -65,5 +66,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .environmentObject(CourseViewModel())
             .environmentObject(SectionViewModel())
+            .environmentObject(FirestoreManager())
     }
 }

@@ -19,7 +19,10 @@ struct CourseView: View {
                     Button(action: {
                         presentationMode.wrappedValue.dismiss()
                 }) {
-                                    CloseButton()
+                    CloseButton()
+                        .accessibilityAddTraits([.isButton])
+                        .accessibilityLabel("Back")
+                        .accessibilityHint("Go back to main view.")
                   }
                      Spacer()
              }
